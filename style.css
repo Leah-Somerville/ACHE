@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&family=Raleway:wght@300;400;600;700;900&family=Tilt+Neon&display=swap');
+
+*{
+    box-sizing: border-box;
+
+    background-color: #331A3E;
+
+    font-family: 'Quicksand', sans-serif;
+}
+
+h1, p{
+    color: #E7B35F;
+}
+
+#symptom-buttons{
+    justify-content: space-between;
+}
+
+button{
+    background-color: #E84855;
+    width: 100px;
+    height: 100px;
+    border: none;
+    border-radius: 10px;
+    color: #331A3E;
+}
