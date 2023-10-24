@@ -3,24 +3,57 @@
 *{
     box-sizing: border-box;
 
-    background-color: #331A3E;
+    background-color: #480c4c ;
 
     font-family: 'Quicksand', sans-serif;
 }
 
 h1, p{
-    color: #E7B35F;
+    color: #f8d555;
+    text-align: center;
 }
 
-#symptom-buttons{
-    justify-content: space-between;
+h1{
+    padding-top: 20px;
+    font-size: 45px;
+    margin: 0px;
 }
 
-button{
-    background-color: #E84855;
-    width: 100px;
-    height: 100px;
-    border: none;
+p{
+    margin: 0px;
+    /* font-size: 20px; */
+}
+
+#question{
+    font-size: 30px;
+    margin: 10px;
+}
+
+a{
+    /* COLORS */
+    text-decoration: none;
+
+    /* TEXT */
+    text-align: center;
+    padding-top: 70px;
+    font-size: 40px;
+    
+    /* SHAPE */
+    display: block;
+    height: 200px;
+    margin: 15px;
+    margin-left: 40px;
+    margin-right: 40px;
     border-radius: 10px;
-    color: #331A3E;
+}
+
+#emergency{
+    background-color: #E84855;
+    color: #331a3e;
+}
+
+#exploring{
+    background-color: #3e92cc;
+    padding-top: 50px;
+    color: #331a3e;
 }
