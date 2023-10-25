@@ -52,8 +52,58 @@ a{
     color: #331a3e;
 }
 
+#emergency:hover{
+    background-color: #B83B45;
+}
+
 #exploring{
+    font-size: 35px;
     background-color: #3e92cc;
     padding-top: 50px;
     color: #331a3e;
+}
+
+#exploring:hover{
+    background-color: #005667;
+}
+
+
+/* JUST EXPLORING PAGE */
+
+h3{
+    color: #f8d555;
+    text-align: center;
+    margin: 10px 30px;
+}
+
+#stroke{
+    color: #e84855;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+#anaphylactic-shock{
+    color: #439a86;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+#extreme-headache{
+    color: #007991;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+#heart-attack{
+    color: #f8d555;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+ul{
+    margin-top: 0px;
+}
+
+div h2{
+    margin-bottom: 0px;
 }
