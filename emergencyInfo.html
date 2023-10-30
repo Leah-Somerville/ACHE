@@ -16,12 +16,12 @@
 
     <h3>Call 911 or Have By-Stander Call</h3>
     <form>
-
-        <label>
-            Name:<br>
-            <input type="text" name="name">
-        </label>
-
+        <div id="name">
+            <label>
+                Name:<br>
+                <input type="text" name="name">
+            </label>
+        </div>
         <div id="onset">
             <p>Is the pain abrupt or gradual?</p>
             <label>
@@ -99,7 +99,6 @@
 
         <div id="aggravators">
             <label>
-                <br>
                 What makes it worse?
                 <br>
                 <input type="text" id="worseBox">
@@ -128,7 +127,6 @@
 
         <div id="timing">
             <label>
-                <br>
                 How long has the pain been going on?
                 <input type="text">
             </label>
@@ -136,13 +134,15 @@
 
         <div id="severity">
             <label>
-                <br>
                 How severe is the pain?(1-10)
+                <br>
                 <input type="number" min="1" max="10">
+
             </label>
         </div>
 
+        <button type="submit" id="submitButton" onclick="submissionAlert()">submit</button>
     </form>
-
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,12 +1,10 @@
-const question = document.querySelector('#question');
-
-const yesButton = document.querySelector('#yes')
-const noButton = document.querySelector('#no')
-
 updateQuestion = (newQuestion) => {
     question.innerText = newQuestion;
 }
 
+const question = document.querySelector('#question');
+const yesButton = document.querySelector('#yes')
+const noButton = document.querySelector('#no')
 
 
 yesButton.addEventListener('click', () => {
@@ -86,10 +84,6 @@ yesButton.addEventListener('click', () => {
 
             responses.append(chestPain, droopyFace, headache, shortOfBreath, idk);
         })
-    })
-
-    noButton.addEventListener('click', () => {
-        updateQuestion
     })
 
 })

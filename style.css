@@ -125,6 +125,7 @@ div h2{
 h3{
     margin: 10px 30px;
     text-decoration: underline;
+    font-size: 25px;
 }
 
 form{
@@ -139,7 +140,7 @@ form{
     width: 80%;
 } */
 
-input[type=text]{
+input[type=text], input[type=number]{
     background-color: white;
 }
 
@@ -160,3 +161,13 @@ form > label{
     height: 50px;
 }
 
+form > div{
+    margin-bottom: 20px;
+}
+
+#submitButton{
+    font-size: 20px;
+    background-color: #e84855;
+    margin-left: 10px;
+    height: 50px;
+}
