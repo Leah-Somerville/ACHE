@@ -22,8 +22,10 @@ yesButton.addEventListener('click', () => {
             const responses = document.querySelector('#responses');
             responses.replaceChildren();
 
-            const chestPain = document.createElement(`button`);
+            const chestPain = document.createElement(`a`);
             chestPain.innerText = "Chest Pain";
+            chestPain.href = "emergencyInfo.html";
+
             chestPain.style.backgroundColor = "#E84855";
             chestPain.style.color = "#480C4C";
             chestPain.style.height = "100px";
@@ -32,6 +34,7 @@ yesButton.addEventListener('click', () => {
             chestPain.style.fontSize = "30px";
             chestPain.style.margin = "auto";
             chestPain.style.marginBottom = "15px";
+            chestPain.style.paddingTop = "30px";
 
 
             const droopyFace = document.createElement(`button`);
@@ -82,40 +85,6 @@ yesButton.addEventListener('click', () => {
             
 
             responses.append(chestPain, droopyFace, headache, shortOfBreath, idk);
-
-            chestPain.addEventListener('click', () => {
-                updateQuestion('Call 911 or Have a By-Stander call 911')
-                responses.replaceChildren();
-
-                const emergencyInfoForm = document.createElement('form');
-
-                const name = document.createElement('input');
-                name.type = "text";
-                name.name = "name";
-
-                const abrupt = document.createElement('input');
-                abrupt.type = "radio";
-                abrupt.name = "abrupt";
-                abrupt.innerText = "Abrupt";
-
-                const gradual = document.createElement('input');
-                gradual.type = "radio";
-                gradual.name = "gradual";
-
-                gradual.innerHTML = "Gradual";
-                console.dir(gradual);
-                
-                const buttonSubmit = document.createElement('input');
-                buttonSubmit.type = 'submit';
-                buttonSubmit.value = 'Submit';
-
-                emergencyInfoForm.appendChild(name);
-                emergencyInfoForm.appendChild(abrupt);
-                emergencyInfoForm.appendChild(gradual);
-                emergencyInfoForm.appendChild(buttonSubmit);
-
-                responses.append(emergencyInfoForm);
-            })
         })
     })
 

@@ -14,14 +14,134 @@
 <body>
     <h1 id="emergencyInfoForm">Emergency Information Form</h1>
 
+    <h3>Call 911 or Have By-Stander Call</h3>
     <form>
-        <p>Name:</p>
-        <input type="text" name="name" placeholder="full name">
-        <p>Age:</p>
-        <input type="number" name="age" placeholder="age">
-        <p>Allergies:</p>
-        <input type="text" name="allergies" placeholder="allergies">
-        
+
+        <label>
+            Name:<br>
+            <input type="text" name="name">
+        </label>
+
+        <div id="onset">
+            <p>Is the pain abrupt or gradual?</p>
+            <label>
+                <input type="radio" name="abrupt">
+                Abrupt
+            </label>
+
+            <label>
+                <br>
+                <input type="radio" name="gradual">
+                Gradual
+            </label>
+            <br>   
+        </div>
+
+        <div id="location">
+            <p>Where is the majority of pain occurring?</p>
+            <label>
+                <input type="radio" name="head">
+                Head
+            </label>
+            <label>
+                <br>
+                <input type="radio" name="abdomen">
+                Abdomen
+            </label>
+            <label>
+                <br>
+                <input type="radio" name="arms">
+                Arms
+            </label>
+            <label>
+                <br>
+                <input type="radio" name="legs">
+                Legs
+            </label> 
+        </div>
+
+        <div id="duration">
+            <p>How often is the pain occurring?</p>
+
+            <label>
+                <input type="radio" name="continuous">
+                Continuous
+            </label>
+            <label>
+                <br>
+                <input type="radio" name="minute">
+                Every Minute
+            </label>
+            <label>
+                <br>
+                <input type="radio" name="tenMinutes">
+                Every Ten Minutes
+            </label>
+        </div>
+
+        <div id="characteristics">
+            <p>How would they describe the pain?</p>
+            <label>
+                <input type="radio" name="dull">
+                Dull
+            </label>
+            <label>
+                <br>
+                <input type="radio" name="achy">
+                Achy
+            </label>
+            <label>
+                <br>
+                <input type="radio" name="stabbing">
+                Stabbing
+            </label>
+        </div>
+
+        <div id="aggravators">
+            <label>
+                <br>
+                What makes it worse?
+                <br>
+                <input type="text" id="worseBox">
+            </label>
+
+            <label>
+                <br>
+                What makes it better?
+                <br>
+                <input type="text" id="betterBox">
+            </label>
+        </div>
+
+        <div id="radiating">
+            <p>Is the pain radiating?</p>
+            <label>
+                <input type="radio">
+                Yes
+            </label>
+            <label>
+                <br>
+                <input type="radio">
+                No
+            </label>
+        </div>
+
+        <div id="timing">
+            <label>
+                <br>
+                How long has the pain been going on?
+                <input type="text">
+            </label>
+        </div>
+
+        <div id="severity">
+            <label>
+                <br>
+                How severe is the pain?(1-10)
+                <input type="number" min="1" max="10">
+            </label>
+        </div>
+
     </form>
 
 </body>
